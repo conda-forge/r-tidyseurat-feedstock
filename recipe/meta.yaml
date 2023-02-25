@@ -1,4 +1,4 @@
-{% set version = '0.5.3' %}
+{% set version = "0.5.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyseurat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyseurat/tidyseurat_{{ version }}.tar.gz
-  sha256: 33dc7cd324884b5db6eb950b14fbcabbf047d0765f92e454a446ec95da35b310
+  sha256: 4bac4485032eb2b9be2cf179b8b153502bfc39317253eef2e4feaa4709a53d59
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -77,11 +77,10 @@ about:
   dev_url: https://github.com/stemangiola/tidyseurat
   doc_url: https://stemangiola.github.io/tidyseurat/reference/index.html
   license: GPL-3.0-only
-  summary: It creates an invisible layer that allow to see the 'Seurat' object as tibble and
-    interact seamlessly with the tidyverse.
+  summary: It creates an invisible layer that allow to see the 'Seurat' object as tibble and interact seamlessly with the tidyverse.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

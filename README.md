@@ -1,11 +1,11 @@
-About r-tidyseurat
-==================
+About r-tidyseurat-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyseurat-feedstock/blob/main/LICENSE.txt)
 
 Home: https://stemangiola.github.io/tidyseurat/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidyseurat-feedstock/blob/main/LICENSE.txt)
 
 Summary: It creates an invisible layer that allow to see the 'Seurat' object as tibble and interact seamlessly with the tidyverse.
 
