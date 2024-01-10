@@ -1,4 +1,4 @@
-{% set version = "0.7.9" %}
+{% set version = "0.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyseurat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyseurat/tidyseurat_{{ version }}.tar.gz
-  sha256: ba3600f067cd5c57ec95ac6ee43912230cc5558097196073f035765ad288df7b
+  sha256: 8e46deb29c728f637ab62aa7da732fcea6cb51a4861381a066d7b40034dda176
 
 build:
   merge_build_host: true  # [win]
