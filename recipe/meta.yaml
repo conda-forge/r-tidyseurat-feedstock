@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.8.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidyseurat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidyseurat/tidyseurat_{{ version }}.tar.gz
-  sha256: 8e46deb29c728f637ab62aa7da732fcea6cb51a4861381a066d7b40034dda176
+  sha256: bf2d65d2c96422dd4d3204d3a8766a2528adabb7e518e6e0157db7f4802767bf
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
